@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyPhysics : MonoBehaviour {
+public class MyPhysicsManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void LateUpdate () {
-		
-	}
+    public delegate void CollisionEnter(MyCollider other);
+    public event CollisionEnter OnCollisionEnter;
+
+ 
 }
